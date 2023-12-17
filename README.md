@@ -1,16 +1,13 @@
-# weather_application
-
-A new Flutter project.
-
-## Getting Started
-
-This project is a starting point for a Flutter application.
-
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+<img src="https://github.com/krishgohel07/Weather_application/blob/master/output/splash_screen.png">
+<img src="https://github.com/krishgohel07/Weather_application/blob/master/output/homepage.png">
+<img src="https://github.com/krishgohel07/Weather_application/blob/master/output/homepage-2.png">
+<img src="https://github.com/krishgohel07/Weather_application/blob/master/output/homepage-dark.png">
+<img src="https://github.com/krishgohel07/Weather_application/blob/master/output/managecity.png">
+<img src="https://github.com/krishgohel07/Weather_application/blob/master/output/managecity-dark.png">
+<img src="https://github.com/krishgohel07/Weather_application/blob/master/output/searchcity.png">
+<img src="https://github.com/krishgohel07/Weather_application/blob/master/output/searchcity-dark.png">
+<img src="https://github.com/krishgohel07/Weather_application/blob/master/output/searchcity2-dark.png">
+<img src="https://github.com/krishgohel07/Weather_application/blob/master/output/changedcity.png">
+<video>
+<source src="https://github.com/krishgohel07/Weather_application/blob/master/output/final%20app.mp4" type="video/mp4">
+</video>
