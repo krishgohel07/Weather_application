@@ -1,7 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
+import 'package:weather_application/city_page.dart';
+import 'package:weather_application/provider/theme_provider.dart';
 import 'package:weather_application/provider/weather_provider.dart';
 import 'package:weather_application/view/homepage.dart';
+import 'package:weather_application/view/search_page.dart';
 import 'package:weather_application/view/splash.dart';
 
 void main() {
@@ -24,13 +27,23 @@ class _MyAppState extends State<MyApp> {
       providers: [
         ChangeNotifierProvider(
           create: (context) => WeatherProvider(),
+        ),
+        ChangeNotifierProvider(
+          create: (context) => ThemeProvider(),
         )
       ],
       builder: (context, child) => MaterialApp(
+        theme: ThemeData.light(),
+        darkTheme: ThemeData.dark(),
+        themeMode: (Provider.of<ThemeProvider>(context).themeModel.isDark == true)
+            ? ThemeMode.dark
+            : ThemeMode.light,
         initialRoute: 'splash',
         routes: {
           'homepage': (context) => HomePage(),
-          'splash': (context) => Splash()
+          'splash': (context) => Splash(),
+          'search': (context) => Search_page(),
+          'city': (context) => managecity()
         },
       ),
     );
