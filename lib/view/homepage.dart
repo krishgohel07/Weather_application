@@ -33,12 +33,13 @@ class _HomePageState extends State<HomePage> {
             padding: EdgeInsets.only(left: 15, top: 25),
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              crossAxisAlignment: CrossAxisAlignment.start,
               children: [
                 Column(
                   children: [
                     Text(
-                      weather.location['name'],
-                      style: TextStyle(fontSize: 20),
+                      "${weather.location['name']},\n${weather.location['country']}",
+                      style: TextStyle(fontSize: 17),
                     ),
                     SizedBox(
                       height: 2,

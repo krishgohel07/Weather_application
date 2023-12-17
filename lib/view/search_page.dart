@@ -18,13 +18,15 @@ class _Search_pageState extends State<Search_page> {
     return Scaffold(
       appBar: AppBar(
         title: Text("Search City"),
-        actions: [IconButton(
-            onPressed: () {
-              theme.changetheme();
-            },
-            icon: (theme.themeModel.isDark == false)
-                ? Icon(Icons.dark_mode_outlined)
-                : Icon(Icons.light_mode)),],
+        actions: [
+          IconButton(
+              onPressed: () {
+                theme.changetheme();
+              },
+              icon: (theme.themeModel.isDark == false)
+                  ? Icon(Icons.dark_mode_outlined)
+                  : Icon(Icons.light_mode)),
+        ],
       ),
       floatingActionButton: FloatingActionButton(
           onPressed: () {
@@ -35,11 +37,15 @@ class _Search_pageState extends State<Search_page> {
           child: Icon(Icons.done)),
       body: Column(
         children: [
-          TextFormField(
-            onChanged: (val) {
-              weather.fetchcity(val);
-            },
-            decoration: InputDecoration(hintText: 'Search'),
+          Padding(
+            padding: EdgeInsets.all(10),
+            child: TextFormField(
+              onChanged: (val) {
+                weather.fetchcity(val);
+              },
+              decoration: InputDecoration(
+                  hintText: 'Search', border: OutlineInputBorder()),
+            ),
           )
         ],
       ),

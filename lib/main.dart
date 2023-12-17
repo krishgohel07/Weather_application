@@ -33,6 +33,7 @@ class _MyAppState extends State<MyApp> {
         )
       ],
       builder: (context, child) => MaterialApp(
+        debugShowCheckedModeBanner: false,
         theme: ThemeData.light(),
         darkTheme: ThemeData.dark(),
         themeMode: (Provider.of<ThemeProvider>(context).themeModel.isDark == true)
