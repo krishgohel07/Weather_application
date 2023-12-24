@@ -34,7 +34,7 @@ class _managecityState extends State<managecity> {
         ),
         body: (weather.cities.isNotEmpty)
             ? ListView.builder(
-                itemCount: 1,
+                itemCount: weather.cities.length,
                 itemBuilder: (context, index) => Container(
                   height: 80,
                   width: double.infinity,
